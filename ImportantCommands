@@ -1,2 +1,8 @@
 1. EF Core Connection String - "ConnectionStrings": {
-  "MyDB": "Data Source=RAVSHASH-231100\\SQLEXPRESS;Initial Catalog=PostsDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"
+  "MyDB": "Data Source=<servername>\\SQLEXPRESS;Initial Catalog=PostsDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"
+
+2. Install MOngoDB on Docker
+docker run -d --name mongo-db \
+-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
+-e MONGO_INITDB_ROOT_PASSWORD=<password> \
+-p 27017:27107 -v mongodb:/data/db mongodb/mongodb-community-server:latest
