@@ -6,3 +6,8 @@ docker run -d --name mongo-db \
 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
 -e MONGO_INITDB_ROOT_PASSWORD=<password> \
 -p 27017:27107 -v mongodb:/data/db mongodb/mongodb-community-server:latest
+
+3. Docker commands
+docker exec -it 4d95dd21f4c3 bash 
+
+mongosh --username --password
