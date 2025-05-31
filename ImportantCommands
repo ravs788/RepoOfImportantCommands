@@ -11,3 +11,9 @@ docker run -d --name mongo-db \
 docker exec -it 4d95dd21f4c3 bash 
 
 mongosh --username --password
+
+3. git remote add 
+git remote add "origin" git@github.com:User/UserRepo.git
+
+git remote update origin
+git remote set-url "origin" git@github.com:User/UserRepo.git
