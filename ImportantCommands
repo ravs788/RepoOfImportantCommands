@@ -17,3 +17,6 @@ git remote add "origin" git@github.com:User/UserRepo.git
 
 git remote update origin
 git remote set-url "origin" git@github.com:User/UserRepo.git
+
+4. SQL Server Connection string
+"DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=health_tracking;Trusted_Connection=True;MultipleActiveResultSets=true"
